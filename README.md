@@ -6,7 +6,7 @@ While that chapter illustrates crafting an embedded domain-specific language (ED
 
 The fundament of a programming language is a function. So we first construct a function, which is lifted to a `Component` - the Result as well as the parameters. So we yield functional composabilty on a lifted level.
 
-`Function1[T, R]` -> `Function1[Component[S, T], Component[S, R]]`
+`Function1[T, R]` -> `Function1[Component[S, T], Component[S, R]]` see FunctionComponent.scala
 
 `Component[S, T]` corresponds in the book to Console[T]. We have enriched our `Component` by a type parameter `S`, which allows us to abtract the `ConsoleState[A]` of the book to an abitrary `State[S, A]` Monad.
 
