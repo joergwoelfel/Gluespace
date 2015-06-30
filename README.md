@@ -4,7 +4,7 @@ This repository is based upon Chapter 13 "External effects and I/O" of "Function
 
 While that chapter illustrates crafting an embedded domain-specific language (EDSL), here a very first step is taken towards an embedded general-purpose language (EPSL).
 
-The fundament of a programming language is a function. So we first construct a function, which is lifted to a `Component` - the Result as well as the parameters. So we yield functional composabilty on a lifted level.
+The fundament of a programming language is a function. So we first construct a function, which is lifted to a `Component` - the Result as well as the parameters and the function itself. So we yield functional composabilty on a lifted level.
 
 `Function1[T, R]` -> `Function1[Component[S, T], Component[S, R]]` see FunctionComponent.scala
 
